@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RpsTournament.WpfApp"
         mc:Ignorable="d"
-        Title="Rock Paper Scissors"
+        Title="{x:Static local:Resources.WindowTitle}"
         Height="700"
         Width="1100"
         MinHeight="650"
@@ -107,11 +107,11 @@
 
             <TextBlock
                 Grid.Column="0"
-                Text="Player name"
+                Text="{x:Static local:Resources.PlayerNameLabel}"
                 VerticalAlignment="Center"
                 FontSize="17"
                 Foreground="{DynamicResource SecondaryTextBrush}"
-                Margin="0,0,18,0"/>
+                Margin="2,0,16,0"/>
 
             <Border
                 Grid.Column="1"
@@ -123,7 +123,7 @@
 
                 <TextBox
                     x:Name="PlayerNameTextBox"
-                    Text="Player"
+                    Text="{x:Static local:Resources.DefaultPlayerName}"
                     TextWrapping="Wrap"
                     VerticalContentAlignment="Center"
                     Padding="16,0"
@@ -131,13 +131,13 @@
                     Foreground="#E8EEF8"
                     Background="Transparent"
                     BorderThickness="0"
-                    TextChanged="PlayerNameTextBox_TextChanged"/>
+                    TextChanged="PlayerNameTextBox_TextChanged" Margin="2,0,-2,0"/>
             </Border>
 
             <Button
                 x:Name="NewTournamentButton"
                 Grid.Column="3"
-                Content="⟳   New Tournament"
+                Content="{x:Static local:Resources.NewTournamentButtonText}"
                 Height="48"
                 Width="220"
                 HorizontalAlignment="Right"
@@ -169,7 +169,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock
-                        Text="Score"
+                        Text="{x:Static local:Resources.ScoreLabel}"
                         FontSize="17"
                         Foreground="{DynamicResource SecondaryTextBrush}"
                         VerticalAlignment="Top" Margin="-2,-8,2,0" Grid.ColumnSpan="2" TextAlignment="Center"/>
@@ -183,14 +183,14 @@
                         Foreground="{DynamicResource SecondaryTextBrush}" Margin="90,7,118,0" Height="64" TextAlignment="Center" Grid.Column="1"/>
 
                     <TextBlock
-                        Text="Computer"
+                        Text="{x:Static local:Resources.ComputerLabel}"
                         FontSize="24"
                         FontWeight="SemiBold"
                         VerticalAlignment="Top"
                         Foreground="{DynamicResource SecondaryTextBrush}" Margin="225,22,-2,0" Height="38" Grid.Column="1"/>
 
                     <TextBlock x:Name="PlayerName"
-                        Text="Player"
+                        Text="{x:Static local:Resources.DefaultPlayerName}"
                         FontSize="24"
                         FontWeight="SemiBold"
                         VerticalAlignment="Top"
@@ -211,14 +211,14 @@
                 <Grid Margin="25">
 
                     <TextBlock
-                        Text="Status"
+                        Text="{x:Static local:Resources.StatusLabel}"
                         FontSize="17"
                         Foreground="#B5C2D6"
                         VerticalAlignment="Top" Margin="0,-5,0,0"/>
 
                     <TextBlock
                         x:Name="StatusTextBlock"
-                        Text="Choose your move"
+                        Text="{x:Static local:Resources.SelectMove}"
                         FontSize="28"
                         FontWeight="SemiBold"
                         Foreground="#42E58C"
@@ -256,7 +256,7 @@
 
                     <TextBlock
                         Grid.Row="0"
-                        Text="Choose your move"
+                        Text="{x:Static local:Resources.ChooseMoveHeading}"
                         FontSize="18"
                         FontWeight="SemiBold"
                         Foreground="{DynamicResource SecondaryTextBrush}"
@@ -274,7 +274,7 @@
                         <Button
                             x:Name="RockButton"
                             Grid.Column="0"
-                            Content="Rock"
+                            Content="{x:Static local:Resources.RockButtonText}"
                             Style="{StaticResource MoveButtonStyle}"
                             Click="Button_Variant_Click" Foreground="{DynamicResource SecondaryTextBrush}"/>
 
@@ -282,14 +282,14 @@
                         <Button
                             x:Name="PaperButton"
                             Grid.Column="1"
-                            Content="Paper"
+                            Content="{x:Static local:Resources.PaperButtonText}"
                             Style="{StaticResource MoveButtonStyle}"
                             Click="Button_Variant_Click" Foreground="{DynamicResource SecondaryTextBrush}"/>
 
                         <Button
                             x:Name="ScissorsButton"
                             Grid.Column="2"
-                            Content="Scissors"
+                            Content="{x:Static local:Resources.ScissorsButtonText}"
                             Style="{StaticResource MoveButtonStyle}"
                             Click="Button_Variant_Click" Foreground="{DynamicResource SecondaryTextBrush}"/>
 
@@ -298,7 +298,7 @@
                     <Button
                         x:Name="PlayRoundButton"
                         Grid.Row="2"
-                        Content="▶   Play"
+                        Content="{x:Static local:Resources.PlayButtonText}"
                         Height="55"
                         Margin="6,10,6,0"
                         Background="#397BFF"
@@ -345,7 +345,7 @@
 
                     <TextBlock
                         Grid.Row="0"
-                        Text="Tournament History"
+                        Text="{x:Static local:Resources.TournamentHistoryLabel}"
                         FontSize="18"
                         FontWeight="SemiBold"
                         Foreground="{DynamicResource SecondaryTextBrush}"
@@ -389,10 +389,10 @@
                         </DataGrid.Resources>
 
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="#" Binding="{Binding Number}" Width="50" ElementStyle="{StaticResource CenteredCellStyle}"/>
-                            <DataGridTextColumn Header="Player" Binding="{Binding PlayerMove}" Width="*" ElementStyle="{StaticResource CenteredCellStyle}"/>
-                            <DataGridTextColumn Header="Computer" Binding="{Binding ComputerMove}" Width="*" ElementStyle="{StaticResource CenteredCellStyle}"/>
-                            <DataGridTextColumn Header="Result" Binding="{Binding Result}" Width="*" ElementStyle="{StaticResource CenteredCellStyle}"/>
+                            <DataGridTextColumn Header="{x:Static local:Resources.ColumnNumberHeader}" Binding="{Binding Number}" Width="50" ElementStyle="{StaticResource CenteredCellStyle}"/>
+                            <DataGridTextColumn Header="{x:Static local:Resources.ColumnPlayerHeader}" Binding="{Binding PlayerMove}" Width="*" ElementStyle="{StaticResource CenteredCellStyle}"/>
+                            <DataGridTextColumn Header="{x:Static local:Resources.ColumnComputerHeader}" Binding="{Binding ComputerMove}" Width="*" ElementStyle="{StaticResource CenteredCellStyle}"/>
+                            <DataGridTextColumn Header="{x:Static local:Resources.ColumnResultHeader}" Binding="{Binding Result}" Width="*" ElementStyle="{StaticResource CenteredCellStyle}"/>
                         </DataGrid.Columns>
 
                         <DataGrid.CellStyle>

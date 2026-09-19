@@ -117,8 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChooseMoveHeading" xml:space="preserve">
+    <value>Choose your move</value>
+  </data>
+  <data name="ColumnNumberHeader" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="ColumnPlayerHeader" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="ColumnResultHeader" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="ComputerLabel" xml:space="preserve">
+    <value>Computer</value>
+  </data>
   <data name="ComputerWon" xml:space="preserve">
     <value>Computer won!</value>
+  </data>
+  <data name="DefaultPlayerName" xml:space="preserve">
+    <value>Player</value>
   </data>
   <data name="Draw" xml:space="preserve">
     <value>Draw!</value>
@@ -129,16 +147,49 @@
   <data name="InvalidName" xml:space="preserve">
     <value>The name must be 2–30 characters long.</value>
   </data>
+  <data name="NewTournamentButtonText" xml:space="preserve">
+    <value>⟳ New Tournament</value>
+  </data>
+  <data name="PaperButtonText" xml:space="preserve">
+    <value>Paper</value>
+  </data>
+  <data name="PlayButtonText" xml:space="preserve">
+    <value>▶ Play</value>
+  </data>
+  <data name="PlayerNameLabel" xml:space="preserve">
+    <value>Player name</value>
+  </data>
   <data name="PlayerWon" xml:space="preserve">
     <value>Player won!</value>
+  </data>
+  <data name="RockButtonText" xml:space="preserve">
+    <value>Rock</value>
+  </data>
+  <data name="ScissorsButtonText" xml:space="preserve">
+    <value>Scissors</value>
   </data>
   <data name="ScoreFormat" xml:space="preserve">
     <value>{0} : {1}</value>
   </data>
+  <data name="ScoreLabel" xml:space="preserve">
+    <value>Score</value>
+  </data>
   <data name="SelectMove" xml:space="preserve">
     <value>Select a move.</value>
   </data>
+  <data name="StatusLabel" xml:space="preserve">
+    <value>Status</value>
+  </data>
   <data name="TournamentFinished" xml:space="preserve">
     <value>The tournament has finished.</value>
+  </data>
+  <data name="TournamentHistoryLabel" xml:space="preserve">
+    <value>Tournament History</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Rock Paper Scissors</value>
+  </data>
+  <data name="ColumnComputerHeader" xml:space="preserve">
+    <value>Computer</value>
   </data>
 </root>

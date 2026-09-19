@@ -22,7 +22,7 @@ namespace RpsTournament.WpfApp {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace RpsTournament.WpfApp {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RpsTournament.WpfApp.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace RpsTournament.WpfApp {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,27 +61,81 @@ namespace RpsTournament.WpfApp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose your move.
+        /// </summary>
+        public static string ChooseMoveHeading {
+            get {
+                return ResourceManager.GetString("ChooseMoveHeading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Computer.
         /// </summary>
-        internal static string Computer {
+        public static string ColumnComputerHeader {
             get {
-                return ResourceManager.GetString("Computer", resourceCulture);
+                return ResourceManager.GetString("ColumnComputerHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to #.
+        /// </summary>
+        public static string ColumnNumberHeader {
+            get {
+                return ResourceManager.GetString("ColumnNumberHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Player.
+        /// </summary>
+        public static string ColumnPlayerHeader {
+            get {
+                return ResourceManager.GetString("ColumnPlayerHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string ColumnResultHeader {
+            get {
+                return ResourceManager.GetString("ColumnResultHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Computer.
+        /// </summary>
+        public static string ComputerLabel {
+            get {
+                return ResourceManager.GetString("ComputerLabel", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Computer won!.
         /// </summary>
-        internal static string ComputerWon {
+        public static string ComputerWon {
             get {
                 return ResourceManager.GetString("ComputerWon", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Player.
+        /// </summary>
+        public static string DefaultPlayerName {
+            get {
+                return ResourceManager.GetString("DefaultPlayerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Draw!.
         /// </summary>
-        internal static string Draw {
+        public static string Draw {
             get {
                 return ResourceManager.GetString("Draw", resourceCulture);
             }
@@ -90,7 +144,7 @@ namespace RpsTournament.WpfApp {
         /// <summary>
         ///   Looks up a localized string similar to The tournament ended in a draw!.
         /// </summary>
-        internal static string DrawTournament {
+        public static string DrawTournament {
             get {
                 return ResourceManager.GetString("DrawTournament", resourceCulture);
             }
@@ -99,72 +153,135 @@ namespace RpsTournament.WpfApp {
         /// <summary>
         ///   Looks up a localized string similar to The name must be 2–30 characters long..
         /// </summary>
-        internal static string InvalidName {
+        public static string InvalidName {
             get {
                 return ResourceManager.GetString("InvalidName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Player.
+        ///   Looks up a localized string similar to ⟳ New Tournament.
         /// </summary>
-        internal static string Player {
+        public static string NewTournamentButtonText {
             get {
-                return ResourceManager.GetString("Player", resourceCulture);
+                return ResourceManager.GetString("NewTournamentButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paper.
+        /// </summary>
+        public static string PaperButtonText {
+            get {
+                return ResourceManager.GetString("PaperButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ▶ Play.
+        /// </summary>
+        public static string PlayButtonText {
+            get {
+                return ResourceManager.GetString("PlayButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Player name.
+        /// </summary>
+        public static string PlayerNameLabel {
+            get {
+                return ResourceManager.GetString("PlayerNameLabel", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Player won!.
         /// </summary>
-        internal static string PlayerWon {
+        public static string PlayerWon {
             get {
                 return ResourceManager.GetString("PlayerWon", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Result.
+        ///   Looks up a localized string similar to Rock.
         /// </summary>
-        internal static string Result {
+        public static string RockButtonText {
             get {
-                return ResourceManager.GetString("Result", resourceCulture);
+                return ResourceManager.GetString("RockButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Round.
+        ///   Looks up a localized string similar to Scissors.
         /// </summary>
-        internal static string Round {
+        public static string ScissorsButtonText {
             get {
-                return ResourceManager.GetString("Round", resourceCulture);
+                return ResourceManager.GetString("ScissorsButtonText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to {0} : {1}.
         /// </summary>
-        internal static string ScoreFormat {
+        public static string ScoreFormat {
             get {
                 return ResourceManager.GetString("ScoreFormat", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Score.
+        /// </summary>
+        public static string ScoreLabel {
+            get {
+                return ResourceManager.GetString("ScoreLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select a move..
         /// </summary>
-        internal static string SelectMove {
+        public static string SelectMove {
             get {
                 return ResourceManager.GetString("SelectMove", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        public static string StatusLabel {
+            get {
+                return ResourceManager.GetString("StatusLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The tournament has finished..
         /// </summary>
-        internal static string TournamentFinished {
+        public static string TournamentFinished {
             get {
                 return ResourceManager.GetString("TournamentFinished", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tournament History.
+        /// </summary>
+        public static string TournamentHistoryLabel {
+            get {
+                return ResourceManager.GetString("TournamentHistoryLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rock Paper Scissors.
+        /// </summary>
+        public static string WindowTitle {
+            get {
+                return ResourceManager.GetString("WindowTitle", resourceCulture);
             }
         }
     }
