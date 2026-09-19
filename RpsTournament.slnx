@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RpsTournament.Core/RpsTournament.Core.csproj" />
+  <Project Path="RpsTournament.WpfApp/RpsTournament.WpfApp.csproj" />
+</Solution>
