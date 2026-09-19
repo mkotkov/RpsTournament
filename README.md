@@ -50,7 +50,3 @@ dotnet run --project RpsTournament.WpfApp
 3. Vajuta "Play", et mängida voor.
 4. Pärast 5 vooru kuulutatakse turniiri võitja.
 5. Uue turniiri alustamiseks vajuta "New Tournament".
-
-## Litsents
-
-Litsents pole määratud.
